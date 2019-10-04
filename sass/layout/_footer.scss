@@ -1,0 +1,49 @@
+#footer {
+    width: 100vw;
+    height: 227.2vw;
+    background-color: $huddle-cyan-dark;
+    color: #ffffff;
+    font-family: $body-font;
+    padding: 42.666vw 5.333vw 12.8vw 5.333vw;
+    @include for-desktop {
+        height: 38.88vw;
+        padding: 13.194vw 8.333vw 8.611vw 8.333vw;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+     ul {
+        list-style-type: none;
+        font-size: 4.26vw;
+    }
+        p{
+            padding-left:10.666vw;
+            text-align:left;
+            color:#ffffff;
+            font-size: 4.26vw;
+            
+            background-position:top left;
+            background-repeat: no-repeat;
+        }
+        p.address{
+            background-image:url(../images/icon-location.svg);
+            background-size: 5vw;
+        }
+        p.tel{
+            background-image:url(../images/icon-phone.svg);
+            background-size: 6.1vw;
+        }
+        p.email{
+            background-image:url(../images/icon-email.svg);
+            background-size: 7.466vw;
+        }
+     
+}
+#footer_logo path{
+    fill: #ffffff;
+}
+
+ 

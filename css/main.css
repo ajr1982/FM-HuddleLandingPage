@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div,
+header,
+footer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  display: inline-block;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 6.66vw;
+  text-align: center;
+}
+
+@media (min-width: 720px) {
+  h1 {
+    text-align: left;
+    font-size: 2.847vw;
+  }
+}
+
+h2 {
+  font-size: 5.6vw;
+  text-align: center;
+}
+
+@media (min-width: 720px) {
+  h2 {
+    text-align: left;
+    font-size: 2.0138vw;
+  }
+}
+
+h3 {
+  font-size: 5.066vw;
+}
+
+@media (min-width: 720px) {
+  h3 {
+    font-size: 2.22vw;
+  }
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 4.8vw;
+  text-align: center;
+  color: #808d99;
+}
+
+@media (min-width: 720px) {
+  p {
+    text-align: left;
+    font-size: 1.25vw;
+  }
+}
+
+#main {
+  padding: 0 5.333vw;
+  width: 100vw;
+}
+
+.two-col-block,
+.four-col-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.two-col-block {
+  background-color: #ffffff;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 11.2vw;
+  padding: 10.93vw;
+}
+
+@media (min-width: 720px) {
+  .two-col-block {
+    padding: 3.472vw 2vw;
+    margin-bottom: 2.77vw;
+  }
+}
+
+.two-col-left,
+.two-col-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+  padding: 0;
+}
+
+@media (min-width: 720px) {
+  .two-col-left,
+  .two-col-right {
+    padding-left: 8.194vw;
+  }
+}
+
+.two-col-left {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media (min-width: 720px) {
+  .two-col-left {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+}
+
+.two-col-right {
+  margin-bottom: 6vw;
+}
+
+@media (min-width: 720px) {
+  .two-col-right {
+    margin-bottom: 0;
+  }
+}
+
+.two-col-left.reverse {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  margin-bottom: 6vw;
+}
+
+@media (min-width: 720px) {
+  .two-col-left.reverse {
+    margin-bottom: 0;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+}
+
+.four-col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 400px;
+          flex: 1 1 400px;
+}
+
+@media (min-width: 720px) {
+  .four-col {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  padding: 0 5.333vw;
+  width: 100vw;
+  background-color: #ebfbff;
+  background-image: url(../images/bg-hero-mobile.svg);
+}
+
+@media (min-width: 720px) {
+  header {
+    background-image: url(../images/bg-hero-desktop.svg);
+  }
+}
+
+header p {
+  color: #000000;
+}
+
+.top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3vw 0;
+}
+
+#header_logo {
+  width: 28vw;
+}
+
+@media (min-width: 720px) {
+  #header_logo {
+    width: 14.097vw;
+  }
+}
+
+header .two-col-block {
+  background-color: transparent;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#footer {
+  width: 100vw;
+  height: 227.2vw;
+  background-color: #00252e;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  padding: 42.666vw 5.333vw 12.8vw 5.333vw;
+}
+
+@media (min-width: 720px) {
+  #footer {
+    height: 38.88vw;
+    padding: 13.194vw 8.333vw 8.611vw 8.333vw;
+  }
+}
+
+#footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#footer ul {
+  list-style-type: none;
+  font-size: 4.26vw;
+}
+
+#footer p {
+  padding-left: 10.666vw;
+  text-align: left;
+  color: #ffffff;
+  font-size: 4.26vw;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+#footer p.address {
+  background-image: url(../images/icon-location.svg);
+  background-size: 5vw;
+}
+
+#footer p.tel {
+  background-image: url(../images/icon-phone.svg);
+  background-size: 6.1vw;
+}
+
+#footer p.email {
+  background-image: url(../images/icon-email.svg);
+  background-size: 7.466vw;
+}
+
+#footer_logo path {
+  fill: #ffffff;
+}
+
+.btn-pink {
+  font-family: "Open Sans", sans-serif;
+  background-color: #ff52bf;
+  border-radius: 100px;
+  color: #ffffff;
+  font-size: 4vw;
+  padding: 3.5vw 0;
+  width: 64.5vw;
+  font-weight: 700;
+  text-align: center;
+  -webkit-box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 720px) {
+  .btn-pink {
+    font-size: 1vw;
+    width: 19.58vw;
+    padding: 1vw 0;
+  }
+}
+
+.btn-pink:hover,
+.btn-white:hover {
+  -webkit-box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.3);
+}
+
+.cta {
+  text-decoration: none;
+}
+
+.cta-pink {
+  font-size: 3vw;
+  padding: 3vw 0;
+  width: 53.33vw;
+}
+
+@media (min-width: 720px) {
+  .cta-pink {
+    font-size: 1.3vw;
+    width: 27.77vw;
+  }
+}
+
+.btn-white {
+  width: 26.66vw;
+  border-radius: 100px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 3vw;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  padding: 2vw 0;
+  text-align: center;
+  -webkit-box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 720px) {
+  .btn-white {
+    width: 13.888vw;
+    font-size: 1.3vw;
+    padding: 1vw 0;
+  }
+}
+
+#main {
+  background-color: #ffffff;
+}
+/*# sourceMappingURL=main.css.map */
