@@ -5,45 +5,131 @@
     color: #ffffff;
     font-family: $body-font;
     padding: 42.666vw 5.333vw 12.8vw 5.333vw;
+    margin: 32vw auto 0 auto;
+
     @include for-desktop {
         height: 38.88vw;
         padding: 13.194vw 8.333vw 8.611vw 8.333vw;
+        margin: 15vw auto 0 auto;
     }
-    
+
     a {
         text-decoration: none;
         color: #ffffff;
     }
-    
-     ul {
+
+    ul {
         list-style-type: none;
         font-size: 4.26vw;
+        margin-bottom: 0;
+        padding-left: 0;
+        @include for-desktop{
+            align-self: flex-end;
+        }
+
+
     }
-        p{
-            padding-left:10.666vw;
-            text-align:left;
-            color:#ffffff;
-            font-size: 4.26vw;
-            
-            background-position:top left;
+    li{
+        margin-bottom: 5vw;
+    }
+
+    p {
+        padding-left: 10.666vw;
+        text-align: left;
+        color: #ffffff;
+        font-size: 4.26vw;
+
+        background-position: top left;
+        background-repeat: no-repeat;
+    }
+
+    p.address {
+        background-image: url(../images/icon-location.svg);
+        background-size: 5vw;
+    }
+
+    p.tel {
+        background-image: url(../images/icon-phone.svg);
+        background-size: 6.1vw;
+    }
+
+    p.email {
+        background-image: url(../images/icon-email.svg);
+        background-size: 7.466vw;
+    }
+    
+    .squeeze-up{
+        ul{
+            margin-top: 0;
+            @include for-desktop{
+                margin-top: 1.11097222vw;
+            }
+        }
+    
+    }
+    .middle{
+        padding-left: 11vw;
+    }
+    .copyright{
+        text-align: center;
+        font-size: 2vw;
+        @include for-desktop{
+            text-align: right;
+            font-size: 0.9vw;
+        }
+    }
+    @include for-desktop {
+        p {
+            padding-left: 2.91vw;
+            text-align: left;
+            color: #ffffff;
+            font-size: 1.111vw;
+
+            background-position: top left;
             background-repeat: no-repeat;
         }
-        p.address{
-            background-image:url(../images/icon-location.svg);
-            background-size: 5vw;
+
+        p.address {
+            background-image: url(../images/icon-location.svg);
+            background-size: 0.972vw;
         }
-        p.tel{
-            background-image:url(../images/icon-phone.svg);
-            background-size: 6.1vw;
+
+        p.tel {
+            background-image: url(../images/icon-phone.svg);
+            background-size: 1.527vw;
         }
-        p.email{
-            background-image:url(../images/icon-email.svg);
-            background-size: 7.466vw;
+
+        p.email {
+            background-image: url(../images/icon-email.svg);
+            background-size: 1.597vw;
         }
-     
-}
-#footer_logo path{
-    fill: #ffffff;
+
+        ul {
+            font-size: 1.111vw;
+        }
+        li{
+            margin-bottom: 1.5vw;
+        }
+    }
+    ion-icon{
+        font-size: 8.53vw;
+        @include for-desktop{
+            font-size: 2.222vw;
+        }
+        
+    }
+    .centered{
+        align-self: center;
+        text-align: center;
+        @include for-desktop{
+            align-self: flex-start;
+            
+        }
+
+    }
+
 }
 
- 
+#footer_logo path {
+    fill: #ffffff;
+}

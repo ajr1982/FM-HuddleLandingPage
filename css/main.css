@@ -80,16 +80,29 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media (min-width: 720px) {
+  .two-col-block,
+  .four-col-block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .two-col-block {
@@ -164,17 +177,8 @@ p {
 }
 
 .four-col {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 400px;
-          flex: 1 1 400px;
-}
-
-@media (min-width: 720px) {
-  .four-col {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
+  -ms-flex-preferred-size: 365px;
+      flex-basis: 365px;
 }
 
 img {
@@ -235,12 +239,14 @@ header .two-col-block {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   padding: 42.666vw 5.333vw 12.8vw 5.333vw;
+  margin: 32vw auto 0 auto;
 }
 
 @media (min-width: 720px) {
   #footer {
     height: 38.88vw;
     padding: 13.194vw 8.333vw 8.611vw 8.333vw;
+    margin: 15vw auto 0 auto;
   }
 }
 
@@ -252,6 +258,19 @@ header .two-col-block {
 #footer ul {
   list-style-type: none;
   font-size: 4.26vw;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+@media (min-width: 720px) {
+  #footer ul {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+#footer li {
+  margin-bottom: 5vw;
 }
 
 #footer p {
@@ -276,6 +295,85 @@ header .two-col-block {
 #footer p.email {
   background-image: url(../images/icon-email.svg);
   background-size: 7.466vw;
+}
+
+#footer .squeeze-up ul {
+  margin-top: 0;
+}
+
+@media (min-width: 720px) {
+  #footer .squeeze-up ul {
+    margin-top: 1.11097222vw;
+  }
+}
+
+#footer .middle {
+  padding-left: 11vw;
+}
+
+#footer .copyright {
+  text-align: center;
+  font-size: 2vw;
+}
+
+@media (min-width: 720px) {
+  #footer .copyright {
+    text-align: right;
+    font-size: 0.9vw;
+  }
+}
+
+@media (min-width: 720px) {
+  #footer p {
+    padding-left: 2.91vw;
+    text-align: left;
+    color: #ffffff;
+    font-size: 1.111vw;
+    background-position: top left;
+    background-repeat: no-repeat;
+  }
+  #footer p.address {
+    background-image: url(../images/icon-location.svg);
+    background-size: 0.972vw;
+  }
+  #footer p.tel {
+    background-image: url(../images/icon-phone.svg);
+    background-size: 1.527vw;
+  }
+  #footer p.email {
+    background-image: url(../images/icon-email.svg);
+    background-size: 1.597vw;
+  }
+  #footer ul {
+    font-size: 1.111vw;
+  }
+  #footer li {
+    margin-bottom: 1.5vw;
+  }
+}
+
+#footer ion-icon {
+  font-size: 8.53vw;
+}
+
+@media (min-width: 720px) {
+  #footer ion-icon {
+    font-size: 2.222vw;
+  }
+}
+
+#footer .centered {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+@media (min-width: 720px) {
+  #footer .centered {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
 }
 
 #footer_logo path {
@@ -322,8 +420,9 @@ header .two-col-block {
 
 @media (min-width: 720px) {
   .cta-pink {
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     width: 27.77vw;
+    padding: 1.3vw 0;
   }
 }
 
@@ -351,5 +450,30 @@ header .two-col-block {
 
 #main {
   background-color: #ffffff;
+}
+
+.floating {
+  width: 93.6vw;
+  margin-left: 50vw;
+  position: absolute;
+  left: -46.8vw;
+  text-align: center;
+  padding: 4vw;
+  z-index: 999;
+  background-color: #ffffff;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 720px) {
+  .floating {
+    width: 55.55vw;
+    left: -27.775vw;
+  }
+}
+
+.floating .cta-pink {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */

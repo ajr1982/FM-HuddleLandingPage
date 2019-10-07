@@ -33,8 +33,9 @@
     width: 53.33vw;
 
     @include for-desktop {
-        font-size: 1.3vw;
+        font-size: 1.5vw;
         width: 27.77vw;
+        padding: 1.3vw 0;
 
     }
 }
