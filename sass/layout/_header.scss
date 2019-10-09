@@ -1,0 +1,35 @@
+header {
+    padding: 0 5.333vw;
+    width: 100vw;
+    background-color: $huddle-cyan-light;
+    background-image: url(../images/bg-hero-mobile.svg);
+
+    @include for-desktop {
+        background-image: url(../images/bg-hero-desktop.svg);
+    }
+}
+
+header p {
+    color: #000000;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw 0;
+}
+
+#header_logo {
+    width: 28vw;
+
+    @include for-desktop {
+        width: 14.097vw;
+    }
+}
+
+header .two-col-block {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}

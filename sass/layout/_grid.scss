@@ -1,0 +1,84 @@
+#main {
+    padding: 0 5.333vw;
+    width: 100vw;
+
+}
+
+.two-col-block,
+.four-col-block {
+    display: flex;
+    flex-direction: column;
+   
+    align-items: flex-start;
+    @include for-desktop{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+.two-col-block {
+    @include rounded-raised-div;
+    margin-bottom: 11.2vw;
+    padding: 10.93vw;
+
+    @include for-desktop {
+        padding: 3.472vw 2vw;
+        margin-bottom: 2.77vw;
+    }
+
+}
+
+.two-col-left,
+.two-col-right {
+    //width: 50%;
+    //flex: 1 1 300px;
+    padding: 0;
+
+    @include for-desktop {
+        padding-left: 8.194vw;
+        flex:1;
+
+    }
+
+}
+
+.two-col-left {
+    order: 1;
+
+    @include for-desktop {
+        order: 0;
+    }
+}
+
+.two-col-right {
+
+    margin-bottom: 6vw;
+
+    @include for-desktop {
+        margin-bottom: 0;
+
+    }
+}
+
+.two-col-left.reverse {
+    order: 0;
+    margin-bottom: 6vw;
+
+    @include for-desktop {
+        margin-bottom: 0;
+        order: 0;
+    }
+}
+
+.four-col {
+    //@include element-boundary;
+    @include for-desktop{
+    flex-basis: 365px;
+    }
+}
+
+img {
+    width: 100%;
+}
