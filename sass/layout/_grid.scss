@@ -33,11 +33,12 @@
 .two-col-left,
 .two-col-right {
     //width: 50%;
-    flex: 1 1 300px;
+    //flex: 1 1 300px;
     padding: 0;
 
     @include for-desktop {
         padding-left: 8.194vw;
+        flex:1;
 
     }
 
@@ -72,8 +73,10 @@
 }
 
 .four-col {
+    //@include element-boundary;
+    @include for-desktop{
     flex-basis: 365px;
-
+    }
 }
 
 img {
