@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,70 +22,71 @@
     }
   </style>
 </head>
+
 <body>
 
   <header>
-    <div class="top-bar">
+    <div class="header__top-bar">
       <img id="header_logo" src="images/logo.svg" alt="Huddle Logo">
       <a href="#" class="cta">
-        <div class="btn-white">Try It Free</div>
+        <div class="cta__btn">Try It Free</div>
       </a>
     </div>
     <div class="two-col-block">
-      <div class="two-col-left reverse">
+      <div class="two-col-block__col-left reverse">
         <h1>Build The Community Your Fans Will Love</h1>
         <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
           Create connections with your users as you engage in genuine discussion. </p>
         <a href="#" class="cta">
-          <div class="btn-pink">Get Started For Free</div>
+          <div class="cta__btn cta__btn--pink">Get Started For Free</div>
         </a>
       </div>
-      <div class="two-col-right">
+      <div class="two-col-block__col-right">
         <img src="images/illustration-mockups.svg" alt="Screen mockups">
       </div>
     </div>
   </header>
   <div id="main">
     <div class="two-col-block">
-      <div class="two-col-left">
+      <div class="two-col-block__col-left">
         <h2>Grow Together</h2>
         <p>Generate meaningful discussions with your audience and build a strong, loyal community.
           Think of the insightful conversations you miss out on with a feedback form.</p>
       </div>
-      <div class="two-col-right">
+      <div class="two-col-block__col-right">
         <img src="images/illustration-grow-together.svg" alt="Grow Together">
       </div>
     </div>
     <div class="two-col-block">
-      <div class="two-col-left reverse">
+      <div class="two-col-block__col-left reverse">
         <img src="images/illustration-flowing-conversation.svg" alt="FLowing Conversation">
       </div>
-      <div class="two-col-right">
+      <div class="two-col-block__col-right">
         <h2>Flowing Conversations</h2>
         <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads
           have just-in-time loading for a more natural flow.</p>
       </div>
     </div>
     <div class="two-col-block">
-      <div class="two-col-left">
+      <div class="two-col-block__col-left">
         <h2>Your Users</h2>
         <p>It takes no time at all to integrate Huddle with your app's authentication solution.
           This means, once signed in to your app, your users can start chatting immediately.</p>
       </div>
-      <div class="two-col-right">
+      <div class="two-col-block__col-right">
         <img src="images/illustration-your-users.svg" alt="Your Users">
       </div>
     </div>
     <div class="floating">
       <h3>Ready To Build Your Community?</h3>
       <a href="#" class="cta">
-        <div class="btn-pink cta-pink">Get Started For Free</div>
+        <div class="cta__btn cta__btn--pink cta__btn--large">Get Started For Free</div>
       </a>
     </div>
   </div>
   <div id="footer">
-    <div class="four-col-block">
-      <div class="four-col contact">
+    <div class="four-col-block__column-block">
+      <div class="four-col-block__column four-col-block__column--first">
         <svg id="footer_logo" width="240" height="39" xmlns="http://www.w3.org/2000/svg">
           <g fill-rule="nonzero" fill="none">
             <path
@@ -100,30 +102,30 @@
         <p class="tel"><a href="tel:+1-543-123-4567">+1-543-123-4567</a></p>
         <p class="email"><a href="mailto:example@huddle.com">example@huddle.com</a></p>
       </div>
-      <div class="four-col nav-1">
+      <div class="four-col-block__column four-col-block__column--second">
         <ul>
           <li><a href="#">About Us</a></li>
           <li><a href="#">What We Do</a></li>
           <li><a href="#">FAQ</a></li>
         </ul>
       </div>
-      <div class="four-col  nav-2">
+      <div class="four-col-block__column  four-col-block__column--third">
         <ul>
           <li><a href="#">Career</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Contact Us</a></li>
         </ul>
       </div>
-      <div class="four-col social">
-        <div id="social_links">
-          <a href="#" class="instagram">
+      <div class="four-col-block__column four-col-block__column--fourth">
+        <div class="social-links">
+          <a href="#" class="social-links__icon social-links__icon--instagram">
             <ion-icon name="logo-instagram">Instagram</ion-icon>
             </ion-icon>
           </a>
-          <a href="#" class="facebook">
+          <a href="#" class="social-links__icon social-links__icon--facebook">
             <ion-icon name="logo-facebook">Facebook</ion-icon>
           </a>
-          <a href="#" class="twitter">
+          <a href="#" class="social-links__icon social-links__icon--twitter">
             <ion-icon name="logo-twitter">Twitter</ion-icon>
           </a>
         </div>
@@ -140,4 +142,5 @@
   </footer>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
+
 </html>

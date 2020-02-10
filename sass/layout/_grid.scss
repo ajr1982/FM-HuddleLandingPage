@@ -5,12 +5,13 @@
 }
 
 .two-col-block,
-.four-col-block {
+.four-col-block__column-block {
     display: flex;
     flex-direction: column;
-   
+
     align-items: flex-start;
-    @include for-desktop{
+
+    @include for-desktop {
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -30,21 +31,21 @@
 
 }
 
-.two-col-left,
-.two-col-right {
+.two-col-block__col-left,
+.two-col-block__col-right {
     //width: 50%;
     //flex: 1 1 300px;
     padding: 0;
 
     @include for-desktop {
         padding-left: 8.194vw;
-        flex:1;
+        flex: 1;
 
     }
 
 }
 
-.two-col-left {
+.two-col-block__col-left {
     order: 1;
 
     @include for-desktop {
@@ -52,7 +53,7 @@
     }
 }
 
-.two-col-right {
+.two-col-block__col-right {
 
     margin-bottom: 6vw;
 
@@ -62,7 +63,7 @@
     }
 }
 
-.two-col-left.reverse {
+.two-col-block__col-left.reverse {
     order: 0;
     margin-bottom: 6vw;
 
@@ -72,10 +73,11 @@
     }
 }
 
-.four-col {
+.four-col-block__column {
+
     //@include element-boundary;
-    @include for-desktop{
-    flex-basis: 365px;
+    @include for-desktop {
+        flex-basis: 365px;
     }
 }
 

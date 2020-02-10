@@ -1,21 +1,23 @@
 #main {
     background-color: #ffffff;
 }
-.floating{
+
+.floating {
     width: 93.6vw;
     margin-left: 50vw;
     position: absolute;
     left: -46.8vw;
     text-align: center;
-    padding:4vw;
+    padding: 4vw;
     z-index: 999;
     @include rounded-raised-div;
-    @include for-desktop{
+
+    @include for-desktop {
         width: 55.55vw;
         left: -27.775vw
-        
     }
-    .cta-pink{
+
+    .cta__btn--large {
         margin: 0 auto;
     }
 }

@@ -23,15 +23,18 @@
         font-size: 4.26vw;
         margin-bottom: 0;
         padding-left: 0;
-        @include for-desktop{
+
+        @include for-desktop {
             padding-left: 25%;
             font-size: 1.111vw;
         }
 
 
     }
-    li{
+
+    li {
         margin-bottom: 5vw;
+
         @include for-desktop {
             margin-bottom: 1.5vw;
         }
@@ -44,6 +47,7 @@
         font-size: 4.26vw;
         background-position: top left;
         background-repeat: no-repeat;
+
         @include for-desktop {
             padding-left: 2.91vw;
             font-size: 1.111vw;
@@ -53,6 +57,7 @@
     p.address {
         background-image: url(../images/icon-location.svg);
         background-size: 5vw;
+
         @include for-desktop {
             background-size: 0.972vw;
         }
@@ -61,6 +66,7 @@
     p.tel {
         background-image: url(../images/icon-phone.svg);
         background-size: 6.1vw;
+
         @include for-desktop {
             background-size: 1.527vw;
         }
@@ -69,57 +75,69 @@
     p.email {
         background-image: url(../images/icon-email.svg);
         background-size: 7.466vw;
+
         @include for-desktop {
             background-size: 1.597vw;
         }
     }
-    
-    .nav-2{
-       ul{
+
+    .four-col-block__column--third {
+        ul {
             margin-top: 0;
-            @include for-desktop{
+
+            @include for-desktop {
                 margin-top: 1.11097222vw;
             }
 
         }
-    
+
     }
-    .nav-1{
-        @include for-desktop{
-        display: flex;
-        justify-content: center;
+
+    .four-col-block__column--second {
+        @include for-desktop {
+            display: flex;
+            justify-content: center;
         }
     }
-    .copyright{
+
+    .copyright {
         text-align: center;
         font-size: 2vw;
-        @include for-desktop{
+
+        @include for-desktop {
             text-align: right;
             font-size: 0.9vw;
             padding-right: 1.7vw;
         }
     }
-    .contact, .nav-2{
+
+    .four-col-block__column--first,
+    .four-col-block__column--third {
         padding-bottom: 7vw;
-        @include for-desktop{
+
+        @include for-desktop {
             padding-bottom: 0;
         }
     }
-    ion-icon{
+
+    ion-icon {
         font-size: 8.53vw;
-        @include for-desktop{
+
+        @include for-desktop {
             font-size: 2.222vw;
         }
-        
+
     }
-    .social{
+
+    .four-col-block__column--fourth {
         align-self: center;
         text-align: center;
-        @include for-desktop{
+
+        @include for-desktop {
             align-self: flex-start;
             text-align: left;
             padding-top: 3.7vw;
-            
+
         }
 
     }
